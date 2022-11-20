@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root { 
+  color-scheme: light dark;
+
+  --color-red: #db0000;
+  --color-red-disabled: #831010;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-background: #242424;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
