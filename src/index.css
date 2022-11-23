@@ -7,11 +7,14 @@
 :root { 
   color-scheme: light dark;
 
-  --color-red: #db0000;
+  --color-red: #dd0b15;
   --color-red-disabled: #831010;
   --color-white: #ffffff;
+  --color-grey: #cccccc;
   --color-black: #000000;
   --color-background: #242424;
+  --color-buttons: #66666688;
+  --color-buttons-hover: #22222288;
 }
 
 html {
@@ -23,3 +26,35 @@ body {
   font-size: 1.6rem;
 }
 
+/* Swiper Lib */
+.swiper-button-prev, .swiper-button-next{
+  color: var(--color-white);
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover{
+  color: var(--color-red);
+  transform: scale(1.1);
+  transition: 0.25s;
+}
+
+.swiper-slide {
+  box-shadow: 0 0 10px #000;
+  cursor: pointer;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  z-index: 999;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.card:hover {
+  background-color: #00000044;
+}

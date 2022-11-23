@@ -2,12 +2,12 @@ import { TMDB } from "../../../config/tmdb";
 import { moviesAdapter } from "../adapter/adapter";
 
 
-export const getPopularMovies = async () => {
-  const res = await TMDB.api(TMDB.path.movies.popular)
+export const getUpcomingMovies = async () => {
+  const res = await TMDB.api(TMDB.path.movies.upcoming)
   return await moviesAdapter(res.data.results)
 };
 
-export const getPopularMoviesLocal = () => {
+export const getUpcomingMoviesLocal = () => {
   return [
     {
       id: 1,

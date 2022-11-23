@@ -1,0 +1,53 @@
+/* Type component */
+
+.type {
+    display: flex;
+    align-items: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--color-grey);
+}
+
+.type img {
+    width: 35px;
+}
+
+/* Buttons component */
+
+.buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    z-index: 1;
+}
+
+.buttons button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: var(--color-buttons);
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: var(--color-buttons-hover);
+    transition: 0.25s;
+}
+
+/* Description component */
+
+.description {
+    width: 33%;
+    color: var(--color-grey);
+}
+
+/* Trailer component */
+
+.video {
+    height: '315px';
+    width: '560px';
+    position: absolute;
+    top: calc( (100vh / 2) - 155px);
+    left: calc( (100vw / 2) - 280px);
+    display: flex;
+}

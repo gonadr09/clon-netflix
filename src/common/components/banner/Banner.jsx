@@ -1,27 +1,33 @@
 import React from "react";
 import useFetch from "../../hooks/useFetch";
 import { getPopularMovies } from "../../../features/movies/services/getPopularMovies";
-import { TMDB } from "../../../config/tmdb";
-import { logger } from "../../../utils/logger";
+import { getMovieTrailer } from "../../../features/movies/services/getMovieTrailer";
+import { BannerContainer } from "./styles/BannerContainer"
+import Type from "./components/Type";
+import Title from "./components/Title";
+import Buttons from "./components/Buttons";
+import Description from "./components/Description";
+import Classification from "./components/Classification";
+import Trailer from "./components/Trailer";
+import logoN from "../../../assets/logoN.png"
 
 
-const Banner = () => {
-  const { isLoading, data, error } = useFetch(getPopularMovies);
-
-  let url_img = ''
+const Banner = ({data}) => {
   
-  if (isLoading === false){
-      logger(data, 'API res')
-      const backdrop_path = data[0].backdrop_path
-      url_img = TMDB.path.image + backdrop_path
-  }
+  
+  /*
+  const { data: trailerUrl, trailerLoading, trailerError } = useFetch(async () => await getMovieTrailer(id));
+      <Trailer trailerUrl={trailerUrl}/>
 
+  */
   return (
-    <>
-      <h1>Banner</h1>
-      <div style={{backgroundImage: `url('${url_img}')`, height: '500px', backgroundSize: 'cover'}}></div>
-
-    </>
+    <BannerContainer image={data?.backdrop}>
+      <Type type='MOVIES' logo={logoN}/>
+      <Title title={data?.name}/>
+      <Buttons id={data?.id}/>
+      <Description description={data?.description} />
+      <Classification rating={data?.rating}/>
+    </BannerContainer>
   );
 };
 

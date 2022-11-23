@@ -1,10 +1,12 @@
-import Banner from "./common/components/banner/Banner";
+import Navbar from "./common/components/navbar/Navbar";
+import Movies from "./features/movies/services/pages/Movies";
 
 
 function App() {
   return (
     <div className="App">
-      <Banner />
+      <Navbar />
+      <Movies />
     </div>
   );
 }

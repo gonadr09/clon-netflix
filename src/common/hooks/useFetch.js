@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 
 
 const useFetch = (service) => {
-  const [isLoading, setIsLoading] = useState();
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState();
 
   const fetchData = async () => {
