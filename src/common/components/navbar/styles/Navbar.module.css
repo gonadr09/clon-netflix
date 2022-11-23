@@ -1,0 +1,40 @@
+.container {
+    width: 95%;
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.container div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 5rem;
+}
+
+.logo {
+    width: 150px;
+    z-index: 100;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li {
+    list-style: none;
+    color: var(--color-grey);
+}
+
+.menu li:hover {
+    color: var(--color-white);
+    cursor: pointer;
+    transition: 0.2s;
+}

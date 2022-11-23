@@ -7,30 +7,16 @@ import "swiper/css/navigation";
 const Slider = ({ title, data }) => {
   return (
     <>
-      <h3>{title}</h3>
+      <h3 style={{paddingTop: "10px"}}>{title}</h3>
       <Swiper
         breakpoints={{
-          0: {
-            slidesPerView: 2,
-          },
-          450: {
-            slidesPerView: 3,
-          },
-          640: {
-            slidesPerView: 4,
-          },
-          768: {
-            slidesPerView: 5,
-          },
-          1024: {
-            slidesPerView: 6,
-          },
-          1200: {
-            slidesPerView: 7,
-          },
-          1350: {
-            slidesPerView: 8,
-          },
+          0: { slidesPerView: 2 },
+          450: { slidesPerView: 3 },
+          640: { slidesPerView: 4 },
+          768: { slidesPerView: 5 },
+          1024: { slidesPerView: 6 },
+          1200: { slidesPerView: 7 },
+          1350: { slidesPerView: 8 },
         }}
         spaceBetween={10}
         loop={true}
