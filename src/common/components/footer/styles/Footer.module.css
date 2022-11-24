@@ -1,0 +1,40 @@
+.footer1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 2.5rem;
+    padding: 5rem 0;
+    border-top: 1px solid var(--color-buttons);
+    border-bottom: 1px solid var(--color-buttons);
+}
+
+.footer1 ul {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+}
+
+.footer1 ul li {
+    font-size: 1.25rem;
+    color: var(--color-grey);
+}
+
+.footer1 ul li:hover {
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.footer2 {
+    text-align: center;
+    font-size: 1.25rem;
+    color: var(--color-grey);
+    padding: 1rem 0;
+}
+
+.footer2 ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}

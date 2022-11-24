@@ -6,7 +6,6 @@ import Slider from "../../../../common/components/slider/Slider";
 import { getUpcomingMovies } from "../getUpComingMovies";
 import { getTopRatedMovies } from "../getTopRatedMovies";
 
-
 const Movies = () => {
   const {
     data: popularMovies,
@@ -26,15 +25,13 @@ const Movies = () => {
     error: upcomingMoviesError,
   } = useFetch(getUpcomingMovies);
 
-
-
   return (
     <>
       <Banner data={popularMovies[2]} />
-      <div style={{padding:'10px'}}>
-      <Slider title='Popular movies' data={popularMovies}/>
-      <Slider title='Top rated' data={topRatedMovies}/>
-      <Slider title='Upcoming' data={upcomingMovies}/>
+      <div style={{ padding: "0 10px" }}>
+        <Slider title="Popular movies" data={popularMovies} />
+        <Slider title="Top rated" data={topRatedMovies} />
+        <Slider title="Upcoming" data={upcomingMovies} />
       </div>
     </>
   );

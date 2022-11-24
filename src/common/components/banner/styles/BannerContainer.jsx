@@ -21,15 +21,7 @@ export const BannerContainer = styled.div`
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
-        background: linear-gradient(
-            to bottom,
-            rgba(16,16,16,1) 0%,
-            rgba(16,16,16,0) 15%,
-            rgba(16,16,16,0) 75%,
-            rgba(16,16,16,1) 100%
-        );
+        height: 75vh;
+        background: linear-gradient(0deg, var(--color-background) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, var(--color-background) 100%);
     }
-
-
 `

@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 const Slider = ({ title, data }) => {
   return (
     <>
-      <h3 style={{paddingTop: "10px"}}>{title}</h3>
+      <h3>{title}</h3>
       <Swiper
         breakpoints={{
           0: { slidesPerView: 2 },
@@ -24,7 +24,7 @@ const Slider = ({ title, data }) => {
         navigation={true}
         modules={[Navigation]}
         className="mySwiper"
-        style={{ padding: "10px 0" }}
+        style={{ padding: "10px 0 20px 0" }}
       >
         {data.map((item) => {
           return (

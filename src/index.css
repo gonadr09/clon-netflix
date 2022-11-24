@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+
 }
 
 :root { 
   color-scheme: light dark;
-
   --color-red: #dd0b15;
   --color-red-disabled: #831010;
   --color-white: #ffffff;
   --color-grey: #cccccc;
   --color-black: #000000;
-  --color-background: #242424;
+  --color-background: #141412; /* #242424 */
   --color-buttons: #66666688;
   --color-buttons-hover: #22222288;
 }
@@ -22,7 +25,8 @@ html {
 }
 
 body {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+/*   font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Noto Sans', sans-serif;
   font-size: 1.6rem;
 }
 
@@ -57,4 +61,5 @@ body {
 
 .card:hover {
   background-color: #00000044;
+  transition: 0.5s;
 }

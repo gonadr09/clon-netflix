@@ -6,7 +6,7 @@ const AuthMenu = ({}) => {
     <ul className={styles.menu}>
       <li>🔎</li>
       <li>🔔</li>
-      <li>client1 logged</li>
+      <li>Hi, clientName!</li>
       <li>🎃</li>
     </ul>
   )
