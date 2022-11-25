@@ -1,10 +1,11 @@
 import React from "react";
-import useFetch from "../../../../common/hooks/useFetch";
-import { getPopularMovies } from "../getPopularMovies";
-import Banner from "../../../../common/components/banner/Banner";
-import Slider from "../../../../common/components/slider/Slider";
-import { getUpcomingMovies } from "../getUpComingMovies";
-import { getTopRatedMovies } from "../getTopRatedMovies";
+import useFetch from "../../../common/hooks/useFetch";
+import { getPopularMovies } from "../services/getPopularMovies";
+import { getUpcomingMovies } from "../services/getUpComingMovies";
+import { getTopRatedMovies } from "../services/getTopRatedMovies";
+import Banner from "../../../common/components/banner/Banner";
+import Slider from "../../../common/components/slider/Slider";
+
 
 const Movies = () => {
   const {

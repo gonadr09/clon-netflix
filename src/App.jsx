@@ -1,16 +1,13 @@
-import Footer from "./common/components/footer/Footer";
-import Navbar from "./common/components/navbar/Navbar";
-import Movies from "./features/movies/services/pages/Movies";
-import HomePage from "./features/home/pages/HomePage";
-import Signin from "./features/auth/pages/Signin";
+import AuthProvider from "./features/auth/context/AuthProvider";
+import AppRoutes from "./routes/App.routes";
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Signin />
-      <Footer />
+      <AuthProvider>
+        <AppRoutes />
+      </AuthProvider>
     </div>
   );
 }

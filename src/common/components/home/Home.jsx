@@ -6,6 +6,7 @@ import imgMobile from "../../../assets/mobile.png";
 import devices from "../../../assets/devices.png";
 import videodevices from "../../../assets/videodevices.mp4";
 import imgChildren from "../../../assets/children.png";
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
         <h1>Unlimited movies, TV shows, and more.</h1>
         <p>Watch anywhere. Cancel anytime.</p>
         <div>
-          <button>Login</button>
+        <Link to={"/signin"}>Login</Link>
         </div>
       </header>
 

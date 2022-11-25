@@ -27,21 +27,22 @@
     z-index: 1;
 }
 
-.banner h1 {
-    max-width: 740px;
+.banner div {
+    margin-top: 2rem;
 }
 
-.banner button{
-    margin-top: 2rem;
+.banner a{
     padding: 1rem 2.5rem;
     background-color: var(--color-red);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--color-white);
 }
 
-.banner button:hover{
+.banner a:hover{
     background-color: var(--color-red-disabled);
     transition: 0.25s;
 }
