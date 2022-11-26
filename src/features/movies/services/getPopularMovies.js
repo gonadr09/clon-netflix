@@ -1,5 +1,6 @@
 import { TMDB } from "../../../config/tmdb";
 import { moviesAdapter } from "../adapter/adapter";
+import { getMovieTrailer } from "./getMovieTrailer";
 
 
 export const getPopularMovies = async () => {

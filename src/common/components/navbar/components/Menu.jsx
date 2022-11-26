@@ -11,7 +11,6 @@ const Menu = () => {
         <li><Link to={"/"}>Home</Link></li>
         <li><Link to={"/tv"}>TV Series</Link></li>
         <li><Link to={"/movies"}>Movies</Link></li>
-        <li><Link to={"/tv"}>Recently Added</Link></li>
       </ul>
     )
   }

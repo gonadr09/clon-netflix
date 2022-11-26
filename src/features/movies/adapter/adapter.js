@@ -1,5 +1,4 @@
 import { TMDB } from "../../../config/tmdb";
-import { getMovieTrailer } from "../services/getMovieTrailer";
 
 export const moviesAdapter = (movies) => {
   return movies.map((movie) => {

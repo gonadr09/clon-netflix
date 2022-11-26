@@ -1,0 +1,93 @@
+.trailer {
+    position: fixed;
+    top: 15vh;
+    left: 0;
+    width: 100vw;
+    height: 75vh;
+    background-color: #000;
+    
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, var(--color-background) 10%, var(--color-background) 90%, rgba(0,0,0,0)100%);
+    
+    z-index: 2;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.trailer::before {
+    z-index: 3;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000088;
+    /*
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, var(--color-background) 10%, var(--color-background) 90%, rgba(0,0,0,0)100%);
+    */
+}
+
+.trailer div {
+    z-index: 3;
+    flex: 1;
+}
+
+.trailer div iframe {
+    width: calc(560px * 1.2);
+    height: calc(315px * 1.2);
+}
+
+.trailer_description {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    padding-left: 10rem;
+}
+
+.trailer_description p {
+    width: 100%;
+    max-width: 720px;
+}
+
+.trailer_description a {
+    padding: 0.75rem 1.75rem;
+    background-color: var(--color-red);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--color-white);
+    inline-size: fit-content;
+    margin-top: 1rem;
+}
+
+.trailer_description a:hover {
+    background-color: var(--color-red-disabled);
+    transition: 0.2s;
+}
+
+.close_button {
+    position: fixed;
+    top: 26vh;
+    right: 3%;
+    z-index: 3;
+    background-color: transparent;
+    border: 2px solid var(--color-grey);
+    padding: 0px 9px 4px 9px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-grey);
+}
+
+.close_button:hover {
+    color: var(--color-red);
+    border: 2px solid var(--color-red);
+    cursor: pointer;
+    transition: 0.2s;
+}

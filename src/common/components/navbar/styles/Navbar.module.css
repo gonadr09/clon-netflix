@@ -1,7 +1,6 @@
 .container {
-    width: 95%;
+    width: 90%;
     height: 100%;
-    max-width: 1200px;
     margin: auto;
 
     display: flex;
@@ -30,6 +29,10 @@
     align-items: center;
 }
 
+.menu svg {
+    margin-left: -10px;
+}
+
 .menu li a {
     text-decoration: none;
     color: var(--color-grey);
@@ -49,4 +52,9 @@
     font-size: 1.5rem;
     text-decoration: none;
     color: var(--color-white);
+}
+
+.menu li button:hover {
+    background-color: var(--color-red-disabled);
+    transition: 0.2s;
 }

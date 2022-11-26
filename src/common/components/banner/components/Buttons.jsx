@@ -1,12 +1,14 @@
-import React from 'react'
-import Button from './Button'
+import React, { useContext } from 'react'
 import styles from "../styles/Banner.module.css";
+import { TrailerContext } from '../../../../features/trailer/context/TrailerContext'
 
-const Buttons = () => {
+const Buttons = ({data}) => {
+  const {handleTrailer} = useContext(TrailerContext)
+
   return (
     <div className={styles.buttons}>
-      <Button name="▶ Watch"/>
-      <Button name="+ My list"/>
+      <button onClick={() => handleTrailer(data)}>▶ Watch</button>
+      <button onClick={() => handleTrailer(data)}>+ Details</button>
     </div>
   )
 }

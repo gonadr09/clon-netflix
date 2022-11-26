@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
+import { TrailerContext } from "../../../features/trailer/context/TrailerContext";
 
-const Slider = ({ title, data }) => {
+const Slider = ({ title, data}) => {
+  const {handleTrailer} = useContext(TrailerContext)
+
   return (
     <>
       <h3>{title}</h3>
@@ -17,6 +20,7 @@ const Slider = ({ title, data }) => {
           1024: { slidesPerView: 6 },
           1200: { slidesPerView: 7 },
           1350: { slidesPerView: 8 },
+          1700: { slidesPerView: 9 },
         }}
         spaceBetween={10}
         loop={true}
@@ -30,6 +34,7 @@ const Slider = ({ title, data }) => {
           return (
             <SwiperSlide
               key={item.id}
+              onClick={() => handleTrailer(item)}
               style={{
                 background: `url('${item.poster}')`,
                 height: "300px",

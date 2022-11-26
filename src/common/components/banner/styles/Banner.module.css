@@ -21,15 +21,16 @@
     z-index: 1;
 }
 
-.buttons button {
+.buttons button, .buttons a {
     padding: 1rem 2rem;
     border: none;
     border-radius: 0.2rem;
     background-color: var(--color-buttons);
     cursor: pointer;
+    font-size: 1.5rem;
 }
 
-.buttons button:hover {
+.buttons button:hover, .buttons a:hover {
     background-color: var(--color-buttons-hover);
     transition: 0.25s;
 }

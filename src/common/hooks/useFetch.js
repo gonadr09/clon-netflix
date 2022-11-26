@@ -22,7 +22,7 @@ const useFetch = (service) => {
     fetchData();
   }, []);
 
-  return {isLoading, data, error}
+  return {data, isLoading, error}
 };
 
 export default useFetch;

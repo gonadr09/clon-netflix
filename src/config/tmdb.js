@@ -14,14 +14,18 @@ export const TMDB = {
       baseURL: "https://api.themoviedb.org/3/movie/",
       popular: "/movie/popular",
       top_rated: "/movie/top_rated",
+      trending: "/trending/movie/week",
       upcoming: "/movie/upcoming",
     },
     series: {
       baseURL: "https://api.themoviedb.org/3/tv/",
       popular: "/tv/popular",
       top_rated: "/tv/top_rated",
-      upcoming: "/tv/upcoming",
-
+      trending: "/trending/tv/week",
+    },
+    trending:{
+      baseURL: "https://api.themoviedb.org/3/tv/",
+      all: "/trending/all/week",
     },
     images: {
       baseURL: "https://image.tmdb.org/t/p/",

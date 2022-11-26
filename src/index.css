@@ -30,6 +30,10 @@ body {
   font-size: 1.6rem;
 }
 
+button {
+  font-family: 'Noto Sans', sans-serif;
+}
+
 /* Swiper Lib */
 .swiper-button-prev, .swiper-button-next{
   color: var(--color-white);
