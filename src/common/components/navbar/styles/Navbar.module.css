@@ -33,6 +33,12 @@
     margin-left: -10px;
 }
 
+.menu img {
+    width: 28px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #00000088;
+}
+
 .menu li a {
     text-decoration: none;
     color: var(--color-grey);

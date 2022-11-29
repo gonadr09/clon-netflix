@@ -1,11 +1,13 @@
 import React from 'react'
 import styles from "../styles/Navbar.module.css";
 import { Link } from "react-router-dom";
+import netflixLogo from "../../../../assets/netflix.png";
 
-const Logo = ({logo}) => {
+
+const Logo = () => {
   return (
     <Link to={"/"}>
-      <img className={styles.logo} src={logo}></img>
+      <img className={styles.logo} src={netflixLogo}></img>
     </Link>
   )
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import { NavbarContainer } from "./styles/NavbarContainer";
-import netflixLogo from "../../../assets/netflix.png";
 import Logo from "./components/Logo";
 import styles from "./styles/Navbar.module.css";
 import Menu from "./components/Menu";
@@ -11,7 +10,7 @@ const Navbar = () => {
     <NavbarContainer>
       <div className={styles.container}>
         <div>
-          <Logo logo={netflixLogo} />
+          <Logo />
           <Menu />
         </div>
         <AuthMenu />

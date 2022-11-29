@@ -25,3 +25,5 @@ git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:gonadr09/clon-netflix.git main:gh-pages
+
+cd -

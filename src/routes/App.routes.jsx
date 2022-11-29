@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Layout from "../common/components/layout/Layout";
 import HomePage from "../features/home/views/HomePage";
 import Movies from "../features/movies/views/Movies";
@@ -11,7 +11,7 @@ import Error404 from "../common/error404/Error404";
 
 const AppRoutes = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
 
         <Route exact path="/signin" element={
@@ -33,8 +33,8 @@ const AppRoutes = () => {
           <ProtectedRoutes preventUrl={"/signin"}>
             <Layout>
               <Routes>
-                <Route exact path="movies" element={<Movies />} />
-                <Route exact path="tv" element={<Series />} />
+                <Route exact path="/movies" element={<Movies />} />
+                <Route exact path="/tv" element={<Series />} />
                 <Route exact path="*" element={<Error404 />} />
               </Routes>
             </Layout>
@@ -42,7 +42,7 @@ const AppRoutes = () => {
         }/>
 
       </Routes>  
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
