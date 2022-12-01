@@ -14,9 +14,9 @@ const Banner = ({data, type}) => {
       <BannerContainer image={data?.backdrop}>
         <Type type={type} logo={logoN}/>
         <Title title={data?.name}/>
+        <Classification rating={data?.rating}/>
         <Buttons data={data}/>
         <Description description={data?.description} />
-        <Classification rating={data?.rating}/>
       </BannerContainer>
   );
 };

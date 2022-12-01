@@ -90,3 +90,31 @@
     left: 110px;
     width: 65%;
 }
+
+
+@media (max-width: 600px) {
+
+    .main section {
+        flex-direction: column;
+    }
+    .main section div img {
+        position: relative;
+        z-index: 1;
+        width: 300px;
+    }
+
+    .videosection1 video {
+        position: absolute;
+        top: 20px;
+        left: 25px;
+        width: 250px;
+    }
+
+    .videosection2 video {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        width: 65%;
+    }
+
+}

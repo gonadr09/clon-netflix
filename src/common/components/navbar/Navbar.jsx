@@ -13,7 +13,7 @@ const Navbar = () => {
           <Logo />
           <Menu />
         </div>
-        <AuthMenu />
+        <AuthMenu className={styles.auth_menu}/>
       </div>
     </NavbarContainer>
   );

@@ -22,34 +22,30 @@
     z-index: 100;
 }
 
-.menu {
+.menu, .auth_menu {
     display: flex;
     gap: 2rem;
     justify-content: center;
     align-items: center;
 }
 
-.menu svg {
-    margin-left: -10px;
-}
-
-.menu img {
+.menu img , .auth_menu img{
     width: 28px;
     border-radius: 3px;
     box-shadow: 0 0 10px #00000088;
 }
 
-.menu li a {
+.menu li a, .auth_menu li a{
     text-decoration: none;
     color: var(--color-grey);
 }
 
-.menu li a:hover{
+.menu li a:hover, .auth_menu li a:hover{
     color: var(--color-white);
     transition: 0.2s;
 }
 
-.menu li button {
+.menu li button, .auth_menu li button{
     padding: 1rem 1.75rem;
     background-color: var(--color-red);
     border: none;
@@ -60,7 +56,36 @@
     color: var(--color-white);
 }
 
-.menu li button:hover {
+.menu li button:hover, .auth_menu li button:hover {
     background-color: var(--color-red-disabled);
     transition: 0.2s;
+}
+
+.auth_menu li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+
+@media (max-width: 600px) {
+    .container div {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        gap: 0rem;
+    }
+
+    .logo {
+        width: 125px;
+        z-index: 100;
+    }
+
+    .auth_menu {
+        flex-flow: column-reverse nowrap;
+        align-items: flex-end;
+        gap: 0.5rem;
+    }
+
 }

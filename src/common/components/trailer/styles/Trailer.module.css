@@ -91,3 +91,28 @@
     cursor: pointer;
     transition: 0.2s;
 }
+
+
+@media (max-width: 600px) {
+    .trailer {
+        flex-flow: column nowrap;
+        top: 5vh;
+        width: 100vw;
+        height: 90vh;
+    }
+    
+    .trailer_description {
+        padding-left: 0;
+        padding-top: 9rem;
+        width: 90%;
+    }
+
+    .trailer div iframe {
+        width: calc(560px * 0.5);
+        height: calc(315px * 0.5);
+    }
+
+    .close_button {
+        top: 15vh;
+    }
+}

@@ -67,3 +67,10 @@ button {
   background-color: #00000044;
   transition: 0.5s;
 }
+
+
+@media (max-width: 600px) {
+  html {
+   font-size: 50%;
+  }
+}
